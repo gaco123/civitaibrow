@@ -117,8 +117,8 @@ def make_new_folder(content_type, use_new_folder, model_name, lora_old):
             new_folder = "models/Lora/new"
     elif content_type == "LoCon":
         if lora_old:
-            folder = "extensions/addnetworks/models/lora"
-            new_folder = "extensions/addnetworks/models/lora/new"
+            folder = "models/LyCORIS"
+            new_folder = "models/LyCORIS/new"
         else:
             folder = "models/Lora"
             new_folder = "models/Lora/new"
