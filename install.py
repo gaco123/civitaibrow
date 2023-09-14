@@ -1,6 +1,6 @@
 # installer script for some PyPI packages we need...
 
-import launch
+import sus
 pkgs = [
         {"fake_useragent": "fake-useragent"},
         {"PIL": "PIL"},
@@ -9,5 +9,5 @@ pkgs = [
 
 for pkg in pkgs:
     key, val = next(iter(pkg.items()))
-    if not launch.is_installed(key):
-        launch.run_pip(f'install {val}', "requirements for CivitAI Browser")
+    if not sus.is_installed(key):
+        sus.run_pip(f'install {val}', "requirements for CivitAI Browser")
